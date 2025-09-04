@@ -54,6 +54,16 @@
 ./src/api/global/controllers/global.js
 ./src/api/global/services
 ./src/api/global/services/global.js
+./src/api/teacher
+./src/api/teacher/content-types
+./src/api/teacher/content-types/teacher
+./src/api/teacher/content-types/teacher/schema.json
+./src/api/teacher/routes
+./src/api/teacher/routes/teacher.js
+./src/api/teacher/controllers
+./src/api/teacher/controllers/teacher.js
+./src/api/teacher/services
+./src/api/teacher/services/teacher.js
 ./src/api/about
 ./src/api/about/content-types
 ./src/api/about/content-types/about

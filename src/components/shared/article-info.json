@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_article_infos",
+  "info": {
+    "displayName": "ArticleInfo",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "introduction": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "contentByMarkdown": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

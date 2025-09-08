@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "urlTitle": {
+      "type": "string"
+    },
+    "articleInfo": {
+      "type": "component",
+      "component": "shared.article-info",
+      "repeatable": false
+    },
+    "userInfo": {
+      "type": "component",
+      "component": "shared.user-info",
+      "repeatable": false
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Tutorials",
+        "Podcasting",
+        "Content Creation",
+        "Business",
+        "AI Tips"
+      ]
+    },
+    "timeToRead": {
+      "type": "integer"
+    },
+    "createTime": {
+      "type": "date"
+    }
+  }
+}

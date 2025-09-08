@@ -12,9 +12,6 @@
     "introduction": {
       "type": "string"
     },
-    "content": {
-      "type": "blocks"
-    },
     "cover": {
       "type": "media",
       "multiple": false,
@@ -25,8 +22,11 @@
         "audios"
       ]
     },
-    "contentByMarkdown": {
+    "content": {
       "type": "richtext"
+    },
+    "contentBlock": {
+      "type": "blocks"
     }
   },
   "config": {}

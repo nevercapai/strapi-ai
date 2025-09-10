@@ -8,7 +8,6 @@ export interface SharedArticleInfo extends Struct.ComponentSchema {
   };
   attributes: {
     content: Schema.Attribute.RichText;
-    contentBlock: Schema.Attribute.Blocks;
     cover: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     introduction: Schema.Attribute.String;
     title: Schema.Attribute.String;

@@ -24,9 +24,6 @@
     },
     "content": {
       "type": "richtext"
-    },
-    "contentBlock": {
-      "type": "blocks"
     }
   },
   "config": {}

@@ -39,6 +39,11 @@
     },
     "createTime": {
       "type": "date"
+    },
+    "TDK": {
+      "type": "component",
+      "component": "shared.tdk",
+      "repeatable": false
     }
   }
 }

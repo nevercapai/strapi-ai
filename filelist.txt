@@ -126,6 +126,7 @@
 ./src/components/shared/media.json
 ./src/components/shared/quote.json
 ./src/components/shared/article-info.json
+./src/components/shared/tdk.json
 ./src/components/shared/slider.json
 ./src/bootstrap.js
 ./src/admin

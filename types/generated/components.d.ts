@@ -76,6 +76,19 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedTdk extends Struct.ComponentSchema {
+  collectionName: 'components_shared_tdks';
+  info: {
+    displayName: 'TDK';
+    icon: 'write';
+  };
+  attributes: {
+    description: Schema.Attribute.String;
+    keywords: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedUserInfo extends Struct.ComponentSchema {
   collectionName: 'components_shared_user_infos';
   info: {
@@ -97,6 +110,7 @@ declare module '@strapi/strapi' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'shared.tdk': SharedTdk;
       'shared.user-info': SharedUserInfo;
     }
   }

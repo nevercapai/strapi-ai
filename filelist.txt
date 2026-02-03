@@ -44,6 +44,16 @@
 ./.env.example
 ./src
 ./src/api
+./src/api/tanma-blog
+./src/api/tanma-blog/content-types
+./src/api/tanma-blog/content-types/tanma-blog
+./src/api/tanma-blog/content-types/tanma-blog/schema.json
+./src/api/tanma-blog/routes
+./src/api/tanma-blog/routes/tanma-blog.js
+./src/api/tanma-blog/controllers
+./src/api/tanma-blog/controllers/tanma-blog.js
+./src/api/tanma-blog/services
+./src/api/tanma-blog/services/tanma-blog.js
 ./src/api/global
 ./src/api/global/content-types
 ./src/api/global/content-types/global

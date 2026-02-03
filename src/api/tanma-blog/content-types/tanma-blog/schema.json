@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tanma_blogs",
+  "info": {
+    "singularName": "tanma-blog",
+    "pluralName": "tanma-blogs",
+    "displayName": "TanmaBlog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "source": {
+      "type": "string"
+    },
+    "createTime": {
+      "type": "date"
+    },
+    "categoryName": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "highlights": {
+      "type": "string"
+    },
+    "achieveResults": {
+      "type": "string"
+    }
+  }
+}

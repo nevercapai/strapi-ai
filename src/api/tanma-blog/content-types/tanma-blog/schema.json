@@ -47,6 +47,55 @@
     },
     "achieveResults": {
       "type": "string"
+    },
+    "menuType": {
+      "type": "enumeration",
+      "default": "qiwei-wiki",
+      "enum": [
+        "qiwei-wiki",
+        "ai-scrm",
+        "industry-growth",
+        "qiwei-operation",
+        "customer-growth",
+        "selection-reference"
+      ]
+    },
+    "isHot": {
+      "type": "boolean",
+      "default": false
+    },
+    "isRecommend": {
+      "type": "boolean",
+      "default": false
+    },
+    "viewsNum": {
+      "type": "biginteger",
+      "default": "3653989",
+      "min": "0",
+      "max": "9999999999"
+    },
+    "likesNum": {
+      "type": "biginteger",
+      "default": "5264027",
+      "min": "0",
+      "max": "9999999999"
+    },
+    "commentsNum": {
+      "type": "biginteger",
+      "default": "1663723",
+      "min": "0",
+      "max": "9999999999"
+    },
+    "isBanner": {
+      "type": "boolean",
+      "default": false
+    },
+    "bannerImg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

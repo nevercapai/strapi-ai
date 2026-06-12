@@ -583,7 +583,17 @@ export interface ApiTanmaBlogTanmaBlog extends Struct.CollectionTypeSchema {
   };
   attributes: {
     achieveResults: Schema.Attribute.String;
+    bannerImg: Schema.Attribute.Media<'images'>;
     categoryName: Schema.Attribute.String;
+    commentsNum: Schema.Attribute.BigInteger &
+      Schema.Attribute.SetMinMax<
+        {
+          max: '9999999999';
+          min: '0';
+        },
+        string
+      > &
+      Schema.Attribute.DefaultTo<'1663723'>;
     content: Schema.Attribute.RichText;
     cover: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     createdAt: Schema.Attribute.DateTime;
@@ -591,12 +601,35 @@ export interface ApiTanmaBlogTanmaBlog extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     createTime: Schema.Attribute.Date;
     highlights: Schema.Attribute.String;
+    isBanner: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    isHot: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    isRecommend: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    likesNum: Schema.Attribute.BigInteger &
+      Schema.Attribute.SetMinMax<
+        {
+          max: '9999999999';
+          min: '0';
+        },
+        string
+      > &
+      Schema.Attribute.DefaultTo<'5264027'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::tanma-blog.tanma-blog'
     > &
       Schema.Attribute.Private;
+    menuType: Schema.Attribute.Enumeration<
+      [
+        'qiwei-wiki',
+        'ai-scrm',
+        'industry-growth',
+        'qiwei-operation',
+        'customer-growth',
+        'selection-reference',
+      ]
+    > &
+      Schema.Attribute.DefaultTo<'qiwei-wiki'>;
     publishedAt: Schema.Attribute.DateTime;
     source: Schema.Attribute.String;
     summary: Schema.Attribute.String;
@@ -605,6 +638,15 @@ export interface ApiTanmaBlogTanmaBlog extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    viewsNum: Schema.Attribute.BigInteger &
+      Schema.Attribute.SetMinMax<
+        {
+          max: '9999999999';
+          min: '0';
+        },
+        string
+      > &
+      Schema.Attribute.DefaultTo<'3653989'>;
   };
 }
 

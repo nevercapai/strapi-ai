@@ -70,19 +70,16 @@
     },
     "viewsNum": {
       "type": "biginteger",
-      "default": "3653989",
       "min": "0",
       "max": "9999999999"
     },
     "likesNum": {
       "type": "biginteger",
-      "default": "5264027",
       "min": "0",
       "max": "9999999999"
     },
     "commentsNum": {
       "type": "biginteger",
-      "default": "1663723",
       "min": "0",
       "max": "9999999999"
     },

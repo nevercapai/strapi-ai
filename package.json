@@ -4,9 +4,9 @@
   "private": true,
   "description": "A Strapi application",
   "scripts": {
+    "develop": "strapi develop",
     "build": "strapi build",
     "deploy": "strapi deploy",
-    "develop": "strapi develop",
     "seed:example": "node ./scripts/seed.js",
     "start": "strapi start",
     "strapi": "strapi"

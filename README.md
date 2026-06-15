@@ -1,3 +1,8 @@
+一：启动步骤：
+1:node切换到22.6.0
+2:npm install
+3:npm run develop
+
 # 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.

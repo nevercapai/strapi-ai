@@ -592,8 +592,7 @@ export interface ApiTanmaBlogTanmaBlog extends Struct.CollectionTypeSchema {
           min: '0';
         },
         string
-      > &
-      Schema.Attribute.DefaultTo<'1663723'>;
+      >;
     content: Schema.Attribute.RichText;
     cover: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     createdAt: Schema.Attribute.DateTime;
@@ -611,8 +610,7 @@ export interface ApiTanmaBlogTanmaBlog extends Struct.CollectionTypeSchema {
           min: '0';
         },
         string
-      > &
-      Schema.Attribute.DefaultTo<'5264027'>;
+      >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -645,8 +643,7 @@ export interface ApiTanmaBlogTanmaBlog extends Struct.CollectionTypeSchema {
           min: '0';
         },
         string
-      > &
-      Schema.Attribute.DefaultTo<'3653989'>;
+      >;
   };
 }
 
